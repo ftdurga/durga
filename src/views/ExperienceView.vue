@@ -12,7 +12,8 @@
       <section>
         <div>
           <div class="grid grid-cols-1 gap-4 pb-32 md:grid-cols-1 lg:grid-cols-1 fade-zoom-in">
-            <div v-for="item in items" :key="item.id">
+            <!-- CHANGED: Changed 'items' to 'reversedItems' here -->
+            <div v-for="item in reversedItems" :key="item.id">
               <div
                 class="experience-card flex flex-col gap-4 rounded-lg bg-[#1e1e1f] hover:bg-[#282828] border border-[#383838] p-6 text-amber-50 transition-all uration-200 hover:-translate-y-1 hover:scale-[1.01] hover:shadow-xl">
                 <!-- Header with Title and Period -->
@@ -35,28 +36,14 @@
                     </li>
                   </ul>
                 </div>
-
-                <!-- Reflection Link (if available) -->
-                <div v-if="item.reflection !== 'null'" class="flex justify-end pt-2">
-                  <a :href="item.reflection" target="_blank" rel="noreferrer"
-                    title="View Internship Reflection" class="text-blue-300 hover:text-blue-200 transition-colors flex items-center gap-2">
-                    <svg stroke="currentColor"
-                      fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
-                      height="16" width="16" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                      <polyline points="15 3 21 3 21 9"></polyline>
-                      <line x1="10" y1="14" x2="21" y2="3"></line>
-                    </svg>
-                    <span class="text-xs md:text-sm">View Reflection</span>
-                  </a>
-                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-  </article>
-</div></template>
+    </article>
+  </div>
+</template>
 
 <script>
 import Experiences from "../api/ExperienceViewAPI";
@@ -64,6 +51,12 @@ import Experiences from "../api/ExperienceViewAPI";
 export default {
   name: "ExperienceViewAPI",
   mixins: [Experiences],
+  // ADDED: Computed property to reverse the array safely
+  computed: {
+    reversedItems() {
+      return [...this.items].reverse();
+    }
+  }
 };
 </script>
 
