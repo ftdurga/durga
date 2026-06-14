@@ -1,7 +1,7 @@
 export default {
     data() {
       return {
-        toRotate: ["Tech Enthusiast", "Aspiring PM", "Climate Activist"],
+        toRotate: ["Tech Enthusiast", "Aspiring AI Engineer", "Climate Activist"],
         period: 2000,
         txt: "",
         loopNum: 0,

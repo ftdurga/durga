@@ -19,12 +19,11 @@
         </div> -->
         <div class="md:w-11/12">
           <p class="mb-3 md:mb-7 fadein-left fadeins-1 text-base">
-            Hi everyone! I'm Durga Chandrasekaran, a penultimate student pursuing a degree in Computer Science
-            at Singapore Management University. Driven by a passion for Product Management, Smart-City Management,
-            and Artificial Intelligence, I aim to leverage technology to address some of the world’s most
-            pressing challenges, including sustainability and climate change. Whether it’s designing solutions for
-            smarter urban spaces or developing cutting-edge AI applications, I’m constantly exploring new
-            ways to create a better, more sustainable future.
+            Hi everyone! I'm Durga D/O Chandrasekaran, a penultimate student pursuing a degree in Computer Science 
+            at Singapore Management University. Driven by a passion for and Artificial Intelligence, I aim to  
+            leverage technology to address some of the world’s most pressing challenges, including sustainability 
+            and climate change. Whether it’s designing solutions for smarter urban spaces or developing cutting-edge AI 
+            applications, I’m constantly exploring new ways to create a better, more sustainable future.
           </p>
           <p class="mb-3 fadein-left fadeins-2 text-base">
             Beyond academics, I’m an avid reader, spending a lot of time in the library, especially
